@@ -34,7 +34,7 @@ const id = setInterval(async () => {
 
 setTimeout(() => {
     clearInterval(id);
-    arr = arr.sort((a, b) => a.year - b.year).filter((events, i, self) => i === self.findIndex(event => event.name === events.name)).filter(events => events.year < 2000);
+    arr = arr.sort((a, b) => a.year - b.year).filter((events, i, arr) => i === arr.findIndex(event => event.name === events.name)).filter(events => events.year <2000);
     console.log(arr);
 }, 1000);
 
