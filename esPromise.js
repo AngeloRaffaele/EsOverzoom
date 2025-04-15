@@ -112,7 +112,6 @@ let arr = [];
 
 async function travelThroughHistory(n = 95) {
   const eventiUnici = new Map();
-  let k = 0;
 
   try {
     while (eventiUnici.size < 95) {
@@ -123,7 +122,6 @@ async function travelThroughHistory(n = 95) {
           eventiUnici.set(event.name, event)
         }
       });
-      k++;
     };
 
     console.log(eventiUnici);
